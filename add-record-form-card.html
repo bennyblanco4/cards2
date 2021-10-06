@@ -278,8 +278,6 @@ input[type=text]{
     border: hidden;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1px;
-   font-size: 20px;
-   padding-left: 10px;
 }
 
 
@@ -420,7 +418,7 @@ height:300px;
 
 .cards-container {
 text-align: center;
-max-width: 1100px;
+
 }
 
 
@@ -458,7 +456,16 @@ text-decoration: none;
 
 }
 
+.bday {
 
+
+}
+
+.ann {
+
+  
+
+}
 
 
 </style>
@@ -476,8 +483,8 @@ text-decoration: none;
         <div class="header">
         
         <div class="logo">
-           <a href="index.html"><img id="logoimg" src="images/group.svg" width="80px">
-    <!<a class="logout" href="/php/index.php?logout">Logout</a>
+           <a href="index.php"><img id="logoimg" src="survey/group.svg" width="80px">
+    <a class="logout" href="/php/index.php?logout">Logout</a>
     <div class="username"> Hello  <?php  session_start(); echo $_SESSION['user_name'];?> ! </div>
 
         </div>
@@ -501,7 +508,7 @@ text-decoration: none;
 
 
 
-<form action="insert-card.php" method="post" id="regForm" style=";">
+<form action="survey/orderdisplay.html" method="post" id="regForm" style=";">
 	
 
 
@@ -703,7 +710,7 @@ text-decoration: none;
  
   
 
-  <label for="firstName" style="position: absolute; margin-top: 100px;">First Name</label>
+  <label for="firstName" style="position: absolute;">First Name</label>
         
       
 

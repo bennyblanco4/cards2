@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="613" height="654" viewBox="0 0 613 654">
+    <defs>
+        <filter id="a" width="138.2%" height="135.5%" x="-19.1%" y="-17.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="17"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <circle id="b" cx="3" cy="3" r="3"/>
+        <circle id="d" cx="20" cy="20" r="20"/>
+        <circle id="f" cx="31" cy="22" r="20"/>
+        <circle id="h" cx="31" cy="22" r="20"/>
+        <circle id="j" cx="31" cy="22" r="20"/>
+        <circle id="l" cx="31" cy="22" r="20"/>
+        <circle id="n" cx="31" cy="22" r="20"/>
+        <circle id="p" cx="31" cy="22" r="20"/>
+        <circle id="r" cx="31" cy="22" r="20"/>
+        <path id="t" d="M4.342 5l3.47 3.959L6.57 10 2.187 5 6.57 0l1.242 1.041z"/>
+        <path id="v" d="M4.342 5l3.47 3.959L6.57 10 2.187 5 6.57 0l1.242 1.041z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(34 14)">
+        <path fill="#FFF" fill-rule="nonzero" d="M0 0h545v586H0z"/>
+        <g font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold">
+            <text fill="#E1E1E1" transform="translate(432.857 472)">
+                <tspan x="27.313" y="27">5</tspan>
+            </text>
+            <text fill="#E1E1E1" transform="translate(368.714 472)">
+                <tspan x="27.14" y="27">4</tspan>
+            </text>
+            <text fill="#E1E1E1" transform="translate(304.571 472)">
+                <tspan x="27.276" y="27">3</tspan>
+            </text>
+            <text fill="#E1E1E1" transform="translate(240.429 472)">
+                <tspan x="27.477" y="27">2</tspan>
+            </text>
+            <text fill="#E1E1E1" transform="translate(176.286 472)">
+                <tspan x="28.4" y="27">1</tspan>
+            </text>
+            <text fill="#111" transform="translate(112.143 472)">
+                <tspan x="22.394" y="27">30</tspan>
+            </text>
+            <text fill="#111" transform="translate(48 472)">
+                <tspan x="22.64" y="27">29</tspan>
+            </text>
+        </g>
+        <g fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold">
+            <text transform="translate(432.857 412)">
+                <tspan x="22.585" y="27">28</tspan>
+            </text>
+            <text transform="translate(368.714 412)">
+                <tspan x="23.185" y="27">27</tspan>
+            </text>
+            <text transform="translate(304.571 412)">
+                <tspan x="22.654" y="27">26</tspan>
+            </text>
+            <text transform="translate(240.429 412)">
+                <tspan x="22.79" y="27">25</tspan>
+            </text>
+            <text transform="translate(176.286 412)">
+                <tspan x="22.618" y="27">24</tspan>
+            </text>
+            <text transform="translate(112.143 412)">
+                <tspan x="22.753" y="27">23</tspan>
+            </text>
+            <text transform="translate(48 412)">
+                <tspan x="22.955" y="27">22</tspan>
+            </text>
+        </g>
+        <g fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold">
+            <text transform="translate(432.857 352)">
+                <tspan x="23.877" y="27">21</tspan>
+            </text>
+            <text transform="translate(368.714 352)">
+                <tspan x="22.596" y="27">20</tspan>
+            </text>
+            <text transform="translate(304.571 352)">
+                <tspan x="23.563" y="27">19</tspan>
+            </text>
+            <text transform="translate(240.429 352)">
+                <tspan x="23.508" y="27">18</tspan>
+            </text>
+            <text transform="translate(176.286 352)">
+                <tspan x="24.108" y="27">17</tspan>
+            </text>
+            <text transform="translate(112.143 352)">
+                <tspan x="23.577" y="27">16</tspan>
+            </text>
+            <text transform="translate(48 352)">
+                <tspan x="23.713" y="27">15</tspan>
+            </text>
+        </g>
+        <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(432.857 292)">
+            <tspan x="23.541" y="27">14</tspan>
+        </text>
+        <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(368.714 292)">
+            <tspan x="23.676" y="27">13</tspan>
+        </text>
+        <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(304.571 292)">
+            <tspan x="23.877" y="27">12</tspan>
+        </text>
+        <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(240.429 292)">
+            <tspan x="24.8" y="27">11</tspan>
+        </text>
+        <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(176.286 292)">
+            <tspan x="23.519" y="27">10</tspan>
+        </text>
+        <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(112.143 292)">
+            <tspan x="27.162" y="27">9</tspan>
+        </text>
+        <g transform="translate(165.143 297)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#b"/>
+            </mask>
+            <use fill="#C8C9CC" fill-rule="nonzero" xlink:href="#b"/>
+            <g fill="#D51236" fill-rule="nonzero" mask="url(#c)">
+                <path d="M0 0h6v6H0z"/>
+            </g>
+        </g>
+        <g fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold">
+            <text transform="translate(48 292)">
+                <tspan x="27.107" y="27">8</tspan>
+            </text>
+        </g>
+        <g>
+            <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(432.857 232)">
+                <tspan x="27.708" y="27">7</tspan>
+            </text>
+            <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(368.714 232)">
+                <tspan x="27.177" y="27">6</tspan>
+            </text>
+            <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(304.571 232)">
+                <tspan x="27.313" y="27">5</tspan>
+            </text>
+            <g transform="translate(252.429 234)">
+                <mask id="e" fill="#fff">
+                    <use xlink:href="#d"/>
+                </mask>
+                <use fill="#111" fill-rule="nonzero" xlink:href="#d"/>
+                <g fill="#ECEDF1" fill-rule="nonzero" mask="url(#e)">
+                    <path d="M0 0h40v40H0z"/>
+                </g>
+            </g>
+            <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(240.429 232)">
+                <tspan x="27.14" y="27">4</tspan>
+            </text>
+            <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(176.286 232)">
+                <tspan x="27.276" y="27">3</tspan>
+            </text>
+            <text fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold" transform="translate(112.143 232)">
+                <tspan x="27.477" y="27">2</tspan>
+            </text>
+            <g fill="#111" font-family="SFProDisplay-Bold, SF Pro Display" font-size="15" font-weight="bold">
+                <text transform="translate(48 232)">
+                    <tspan x="28.4" y="27">1</tspan>
+                </text>
+            </g>
+        </g>
+        <g>
+            <path fill-rule="nonzero" d="M48 131h449v44H48z"/>
+            <text fill="#C8C9CC" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="13" font-weight="500" letter-spacing=".2" transform="translate(428.571 131)">
+                <tspan x="19.43" y="27">Sun</tspan>
+            </text>
+            <text fill="#C8C9CC" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="13" font-weight="500" letter-spacing=".2" transform="translate(366.143 131)">
+                <tspan x="21.055" y="27">Sat</tspan>
+            </text>
+            <text fill="#C8C9CC" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="13" font-weight="500" letter-spacing=".2" transform="translate(303.714 131)">
+                <tspan x="23.48" y="27">Fri</tspan>
+            </text>
+            <text fill="#C8C9CC" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="13" font-weight="500" letter-spacing=".2" transform="translate(241.286 131)">
+                <tspan x="19.519" y="27">Thu</tspan>
+            </text>
+            <text fill="#C8C9CC" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="13" font-weight="500" letter-spacing=".2" transform="translate(178.857 131)">
+                <tspan x="17.614" y="27">Wed</tspan>
+            </text>
+            <text fill="#C8C9CC" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="13" font-weight="500" letter-spacing=".2" transform="translate(116.429 131)">
+                <tspan x="20.506" y="27">Tus</tspan>
+            </text>
+            <text fill="#C8C9CC" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="13" font-weight="500" letter-spacing=".2" transform="translate(54 131)">
+                <tspan x="17.913" y="27">Mon</tspan>
+            </text>
+            <path fill="#C8C9CC" fill-rule="nonzero" d="M48 174h449v1H48z"/>
+        </g>
+        <g>
+            <g transform="translate(427 63)">
+                <mask id="u" fill="#fff">
+                    <use xlink:href="#t"/>
+                </mask>
+                <use fill="#979797" fill-rule="nonzero" transform="matrix(-1 0 0 1 10 0)" xlink:href="#t"/>
+                <g fill="#111" fill-rule="nonzero" mask="url(#u)">
+                    <path d="M0 0h10.417v10.417H0z"/>
+                </g>
+            </g>
+            <text fill="#000" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="21" font-weight="500" letter-spacing=".2" transform="translate(108 56)">
+                <tspan x="115.686" y="20">April 2019</tspan>
+            </text>
+            <g transform="translate(108 64)">
+                <mask id="w" fill="#fff">
+                    <use xlink:href="#v"/>
+                </mask>
+                <use fill="#979797" fill-rule="nonzero" xlink:href="#v"/>
+                <g fill="#111" fill-rule="nonzero" mask="url(#w)">
+                    <path d="M0 0h10.417v10.417H0z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

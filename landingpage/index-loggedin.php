@@ -186,7 +186,30 @@ display: inline-block;
 
 }
 
+.yourorders {
 
+ width: 500px;
+  height: 19px;
+  font-family: SFProDisplay;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  
+
+}
+
+.yourorders-div {
+
+line-height: 39px;
+padding-right: 15px;
+
+}
 
 
 
@@ -1093,8 +1116,8 @@ height: 280px;
 
 
 
-
 }
+
 
 </style>
 
@@ -1123,18 +1146,18 @@ height: 280px;
 
 <div class="wrapper-login">
 
-
+<div class="username">Hello  <?php  session_start(); echo $_SESSION['user_name'];?> !</div>
  
 
 
 
+<div class="yourorders-div"><a href="/php/survey/orderdisplay.php" class="yourorders">Your Cards</a></div>
+
+<div class="getstarted-div"><a href="/php/add-record-form-card.php" class="getstarted">Send a card</a></div>
 
 
-<div class="getstarted-div"><a href="add-record-form-card.html" class="getstarted">Get Started</a></div>
 
-
-
-<div class="login-div"><a href="/php/index-login.php?login" class="login">Login</a></div>
+<div class="login-div"><a href="/php/index-login.php?logout" class="login">Logout</a></div>
 
 </div>
 
@@ -1352,11 +1375,11 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 
 <img src="images/lodge-at-boyne.png" class="image2"> 
 
-</div>  
+</div>	
 
 
 <div class="textblock2">
-  
+	
 
 <img src="images/background2.png" class="pic2"> 
 
@@ -1400,7 +1423,7 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 <img src="images/kisspng-brand.png" class="image3"> 
 
 
-</div>  
+</div>	
 
 
 
@@ -1458,7 +1481,7 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 
 
 
-</div>  
+</div>	
 <div class="filler">
 
 <div class="footertext">
@@ -1483,7 +1506,7 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 </div>
 
 
-</div>  
+</div>	
 
 
 

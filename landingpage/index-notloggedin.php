@@ -1130,7 +1130,7 @@ height: 280px;
 
 
 
-<div class="getstarted-div"><a href="add-record-form-card.html" class="getstarted">Get Started</a></div>
+<div class="getstarted-div"><a href="/php/add-record-form-card.php" class="getstarted">Get Started</a></div>
 
 
 
