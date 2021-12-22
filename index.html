@@ -103,7 +103,7 @@ margin-top:-339px;
 display:flex;
 float: right; 
 margin-left: auto;
-margin-right: 50px;
+margin-right: 110px;
 
 
 }
@@ -129,7 +129,7 @@ margin-right: 50px;
 .login-div {
 
         line-height: 39px;
-
+  width:65px;
 }
 
 .getstarted-div {
@@ -147,7 +147,7 @@ padding-right: 10px;
 width: 164px;
   height: 43px;
   border-radius: 33px;
-  background-color: rgba(255, 255, 255, 0.15);
+background-color: #f2ac3d;
 display: inline-block;
  
   text-decoration: none;
@@ -161,7 +161,7 @@ display: inline-block;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-
+transition: 0.2s;
 }
 
 
@@ -237,7 +237,7 @@ background-color: #c97b00;
 
 .getstarted:hover {
 
-background-color: #36369c;
+background-color: #c97b00;
 }
 
 
@@ -258,7 +258,7 @@ background-color: #36369c;
 
 .title2 {
 
-width: 348px;
+  width: 348px;
   height: 64px;
   font-family: SFProDisplay;
   font-size: 22px;
@@ -334,9 +334,14 @@ line-height: 50px;
   color: #ffffff;
 
 margin-top: 58px;
+transition: 0.2s;
 }
 
 
+@font-face {
+font-family: "SFProDisplay";
+src: url("/fonts/SF-Pro-Display-Bold.otf");
+}
 .getstarted2:hover {
 
 background-color: #c97b00;
@@ -788,7 +793,7 @@ padding-left: ;
 .wrapper {
 
   display: inline-flex;
-  margin-left: -5%;
+ 
 }
 .filler {
 
@@ -1010,7 +1015,12 @@ margin-right:0px;
 
 }
 
+.wrapper-login {
 
+margin-right: 7px;
+
+
+}
 
 .getstarted {
 
@@ -1042,7 +1052,7 @@ margin-left: 30px;
 .wrapper {
 
       flex-direction: column;
-        margin-left: 4%;
+        margin-left: 3%;
    
 }
 
@@ -1129,12 +1139,14 @@ height: 280px;
 
 
 
-
-<div class="getstarted-div"><a href="add-record-form-card.html" class="getstarted">Get Started</a></div>
-
+<!-- <div class="login-div"><a href="/php/index-login.php?login" class="login">Login</a></div> -->
 
 
-<div class="login-div"><a href="/php/index-login.php?login" class="login">Login</a></div>
+<div class="getstarted-div"><a href="/php/add-record-form-card.html" class="getstarted">Get Started</a></div>
+
+
+
+
 
 </div>
 
@@ -1150,7 +1162,7 @@ height: 280px;
 <div class="title2">Subscribe now and choose when and <br> what to be delivered at your doorstep.</div>
 
 
-<a href="" class="getstarted2">Get Started</a>
+<a href="" class="getstarted2">Send a greeting</a>
 
 
 </div>

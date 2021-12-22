@@ -134,7 +134,7 @@ Try to close this browser tab and open it again. Still logged in! ;)
 
 <p>
 
-<a href="/php/survey/add-record-form-card.php">Get Started</a>
+<a href="/php/survey/add-record-form-card.html">Get Started</a>
 
 
 </div>

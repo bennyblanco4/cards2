@@ -59,16 +59,29 @@ padding-top: 40px;
 
 
 }
+
 .logout {
 float: right;
-padding-right: 30px;
-margin-top: 6.5px;
+margin-right: 65px;
+margin-top:-10px;
 text-decoration: none;
 font-weight: bold;
-
+text-align: center;
+width: 144px;
+height: 51px;
+line-height:51px;
+background: #E19930;
+box-shadow: 3px 4px 4px rgba(24, 57, 107, 0.1);
+border-radius: 13px;
+color:white;
+transition: 0.2s;
 }
 
-a:visited {color:green;}
+.logout:hover {
+
+
+opacity: 0.8;
+}
 
 .username {
 
@@ -90,10 +103,38 @@ margin: 0 ;
 
 .orders-container {
 
-text-align: center;
+
 margin-top: 200px;
+max-width: 1190px;
+margin-left: 8%;
+}
+
+.orders-container-wrapper {
+
+
 
 }
+
+
+.pencil {
+
+  position: absolute;
+  top:10px;
+  left:10px;
+  opacity: 0.2;
+  transition: 0.2s;
+}
+
+
+.pencil:hover {
+
+opacity: 1;
+
+
+
+}
+
+
 
 
 .orders {
@@ -250,6 +291,7 @@ text-align: left;
 font-weight:bold;
 font-size: 28px;
 padding-top: 25px
+
 }
 
 #card-age {
@@ -261,7 +303,7 @@ padding-top: 5px;
 #card-rel1 {
 
 font-size: 16px;
-padding-top: 10px;
+padding-top: 25px;
 
 }
 
@@ -276,7 +318,7 @@ font-weight:bold;
 #card-date1 {
 
 font-size: 16px;
-padding-top: 15px;
+padding-top: 35px;
 padding-bottom: 10px;
 }
 
@@ -296,115 +338,143 @@ border-style: solid;
 
 }
 
+.navb{
+
+float:right;
+margin-top: 6px;
+margin-right: 65px; 
+}
+
+ul {
+
+ 
+  color:white;
+
+}
+
+
+li {
+
+  display: inline;
+
+
+padding-left: 80px;
+
+
+
+
+
+}
+
+.navb-li {text-decoration: none; 
+
+
+  color:#333333;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+letter-spacing: 0.02em;
+
+
+
+
+}
+
+@media screen and (max-width: 860px) {.orders-container { margin-left: 0px; text-align: center;}}
+
+@media screen and (max-width: 880px) {.navb, .logout, .username { display:none;}}
+
 </style>
 
 
 <body>
   
 
+
+
+
 <div class="header">
         <div class="logo">
-          <img id="logoimg" src="group.svg" width="80px">
-    <a class="logout" href="/php/index.php?logout">Logout</a>
-    <div class="username"> Hello  <?php  session_start(); echo $_SESSION['user_name'];?> ! </div>
+          <a href="/php/index.html"><img id="logoimg" src="group.svg" width="80px"></a>
+    <a class="logout" href="/php/index.php?logout\">Logout</a>
+
+
+    <!-- <div class="username"> Hello  <?php  session_start(); echo $_SESSION['user_name'];?> ! </div> -->
+
+
+<ul class="navb">
+  <li><a class="navb-li" href="">Blog</a></li>
+  <li><a class="navb-li" href="">FAQs</a></li>
+  <li><a class="navb-li" href="">Privacy Policy</a></li>
+</ul>
+
+
+
 
         </div>
-
-
-
-
+</div>
 
 
   <div class="yourcards"> Your cards</div>
 
-
-
-
-
-
+<div class="orders-container-wrapper">
 
 <div class="orders-container">
 
-<div class="orders">
-    
-    
-    
+
+
+<div class='orders'>
+
+<div class='order'>
+
+
+<div class='carddata'>
 
 
 
-   <!-- <img class="order" src="addnew.svg"> -->
 
-<div class="order">
+<div class='card-data' id='card-name'>John Miller</div>
 
-
-<div class="carddata">
-
-<div class="card-data" id="card-name">Arjon Sadikaj</div>
-<div class="card-data" id="card-age">22 years old</div>
-<div class="card-data" id="card-rel1">Relationship to you</div>
-<div class="card-data" id="card-rel2">Cousin</div>
-<div class="card-data" id="card-date1">Date you want to send out the card</div>
-<div class="card-data" id="card-date2">22 August 2018</div>
+<div class='card-data' id='card-rel1'>Relationship to you</div>
+<div class='card-data' id='card-rel2'>Brother</div>
+<div class='card-data' id='card-date1'>Date you want to send out the card</div>
+<div class='card-data' id='card-date2'>1 January 2022</div>
 
 </div>
 
 
-<img class="dots" src="dots.svg"> 
+<img class='dots' src='dots.svg'> 
+<img class='pencil' src='pencil.svg'>
+
+</div>
 
 
 </div>
 
 
 
-<div class="order">
-<img class="dots" src="dots.svg"> 
-</div>
-    
-<a href="#" class="addnew"><img class="plus" src="addnew.svg"></a>
 
 
-</div>
+
+
+
+<a href="/php/add-record-form-card.html" class="addnew"><img class="plus" src="addnew.svg"></a>
 
 </div>
 
-
+</div>
 
 
 </body>
 
-
-
+ 
 
 
 </html>
 
-<?php
 
-$servername = "localhost";
-$username = "arjon";
-$password = "arjonsadikaj";
-$dbname = "login";
-
-// Create connection
-$conn = new mysqli($localhost, $arjon, $arjonsadikaj, $login);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT firstname, lastname FROM cards";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
-    }
-} else {
-    echo "0 results";
-}
-
-$conn->close();
-
-
-?>

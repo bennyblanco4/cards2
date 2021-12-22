@@ -98,6 +98,34 @@ padding-top: 40px;
   padding-left: 20px;
 }
 
+input[type=text], input[type=password] {
+    margin: 23px 0 30px 0;
+    width: 200px;
+    height: 30px;
+    background: #FFFFFF;
+    border: hidden;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    margin-left: 20px;
+      font-size: 20px;
+   padding-left: 10px;
+}
+
+
+label {
+
+font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #333333;
+    
+
+
+}
+
 </style>
 
 
@@ -140,8 +168,14 @@ if (isset($login)) {
     <label for="login_input_username">Username</label>
     <input id="login_input_username" class="login_input" type="text" name="user_name" required />
 
+<p></p>
+
+
     <label for="login_input_password">Password</label>
     <input id="login_input_password" class="login_input" type="password" name="user_password" autocomplete="off" required />
+
+
+    <p></p>
 
     <input type="submit"  name="login" value="Log in" />
 

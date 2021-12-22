@@ -12,6 +12,12 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description" content="Submit card reciever information">
   <meta name="keywords" content="information,name,lastname,gender">
@@ -33,6 +39,9 @@ body {
   
   background-color: #fafdff;
   min-width: 450px;  
+
+  font-family: 'roboto',sans-serif,'Open Sans', sans-serif !important;
+    font-size: 1em;
 
 }
 
@@ -230,7 +239,10 @@ float:;
     letter-spacing: 0.02em;
     color: #FFFFFF;
      margin:0 auto;
-     margin-top:70px
+     margin-top:70px;
+     
+     border-style: none; 
+     outline-style: none;
 }
 
 
@@ -278,6 +290,8 @@ input[type=text]{
     border: hidden;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1px;
+   font-size: 20px;
+   padding-left: 10px;
 }
 
 
@@ -317,16 +331,9 @@ width: 100%;
 
 
 
-.logout {
-float: right;
-padding-right: 30px;
-margin-top: 6.5px;
-text-decoration: none;
-font-weight: bold;
 
-}
 
-a:visited {color:green;}
+a:visited {color:black;}
 
 .username {
 
@@ -418,7 +425,7 @@ height:300px;
 
 .cards-container {
 text-align: center;
-
+max-width: 1100px;
 }
 
 
@@ -456,16 +463,85 @@ text-decoration: none;
 
 }
 
-.bday {
+.navb{
+
+float:right;
+margin-top: 6px;
+margin-right: 65px; 
+}
+
+ul {
+
+ 
+  color:white;
+
+}
+
+
+li {
+
+  display: inline;
+
+
+padding-left: 80px;
+
+
+
 
 
 }
 
-.ann {
+.navb-li {
 
-  
+
+  text-decoration: none; 
+
+
+  color:#333333;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+letter-spacing: 0.02em;
+
+
+
 
 }
+
+@media screen and (max-width: 860px) {.orders-container { margin-left: 0px; text-align: center;}}
+
+@media screen and (max-width: 880px) {.navb, .logout, .username { display:none;}}
+
+
+.logout {
+float: right;
+margin-right: 65px;
+margin-top:-10px;
+text-decoration: none;
+font-weight: bold;
+text-align: center;
+width: 144px;
+height: 51px;
+line-height:51px;
+background: #E19930;
+box-shadow: 3px 4px 4px rgba(24, 57, 107, 0.1);
+border-radius: 13px;
+color:white;
+transition: 0.2s;
+}
+
+.logout:hover {
+
+
+opacity: 0.8;
+}
+
+
 
 
 </style>
@@ -483,9 +559,14 @@ text-decoration: none;
         <div class="header">
         
         <div class="logo">
-           <a href="index.php"><img id="logoimg" src="survey/group.svg" width="80px">
+           <a href="index.html"><img id="logoimg" src="survey/group.svg" width="80px">
     <a class="logout" href="/php/index.php?logout">Logout</a>
-    <div class="username"> Hello  <?php  session_start(); echo $_SESSION['user_name'];?> ! </div>
+    
+    <ul class="navb">
+  <li><a class="navb-li" href="">Blog</a></li>
+  <li><a class="navb-li" href="">FAQs</a></li>
+  <li><a class="navb-li" href="">Privacy Policy</a></li>
+</ul>
 
         </div>
 
@@ -508,7 +589,7 @@ text-decoration: none;
 
 
 
-<form action="survey/orderdisplay.html" method="post" id="regForm" style=";">
+<form action="/php/survey/orderdisplay.html" method="post" id="regForm" style=";">
 	
 
 
@@ -553,7 +634,7 @@ text-decoration: none;
 
 
 <select id="kindofgreeting" name="kindofgreeting" style="margin-bottom: 42px";>
-  <option  value="select">Select &#xf0d7;</option>
+  <option  value="select">Select...</option>
   <option value="1">Birthday</option>
   <option value="2">Anniversary</option>
 </select>
@@ -710,7 +791,7 @@ text-decoration: none;
  
   
 
-  <label for="firstName" style="position: absolute;">First Name</label>
+  <label for="firstName" style="position: absolute; margin-bottom: 10px;">First Name</label>
         
       
 
@@ -877,7 +958,7 @@ text-decoration: none;
   <div style="overflow:auto;">
     <div>
       <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Submit</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
   
 

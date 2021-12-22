@@ -161,7 +161,7 @@ display: inline-block;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  transition: 0.2s;
+
 }
 
 
@@ -188,32 +188,6 @@ display: inline-block;
 
 
 
-
-
-.yourorders {
-
- width: 500px;
-  height: 19px;
-  font-family: SFProDisplay;
-  font-size: 16px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-  
-
-}
-
-.yourorders-div {
-
-line-height: 39px;
-padding-right: 15px;
-
-}
 
 
 .getstarted3 {
@@ -360,7 +334,6 @@ line-height: 50px;
   color: #ffffff;
 
 margin-top: 58px;
-transition: 0.2s;
 }
 
 
@@ -527,8 +500,8 @@ display: flex;
 
   height: 2250px;
  text-align: center;
- max-width: 1800px;
-
+ max-width: 1400px;
+ margin: auto;
 }
 
 .section3getstarted {
@@ -682,8 +655,8 @@ margin-top:180px;
 
 
   text-align: left;
-  margin-right: 100px;
-  margin-left: 
+  margin-right: 45px;
+
 }
 
 
@@ -798,28 +771,47 @@ background-color: #3d62f2;
 .colfooter1 {
 
 
-margin-left: 200px;
+
 
   align-items: center;
 padding-top: 100px;  
+transform:rotate(7deg);
+
+}
+
+
+.colfooter1-wrapper {
 
 
 }
 
 .colfooter2 {
 
-  transform:rotate(-7deg);
+  
 
 float:right;
-margin-top: -110px;
+margin-top: ;
 padding-left: ;
 }
 
+.wrapper-container {
+
+  width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 .wrapper {
 
-  display: inline-flex;
- 
+transform:rotate(-7deg);
+
+width:1100px;
+margin-left: -30%;
+display: flex;
+
+margin-top: -80px;
 }
 .filler {
 
@@ -878,258 +870,102 @@ h2 {
   margin-top: 50px;
 }
 
+.footertext {
 
 
-@media (max-width: 550px) {
-
-
-body, html {
-
-  margin: 0;
- width: 100vh;
 }
 
+.section3-wrapper {
 
+width:100%;
 
 
 }
 
 
-@media (max-width: 1080px) { /*breakpoint*/
-  .points {
-    flex-direction: column;
-  }
-
- .section3getstarted {
-
-    
-    margin-top: 120px;
-    flex-direction: column;
+/* MEDIA QUERIES */
 
 
- }
 
 
-.section3col1 {
+@media (max-width: 1080px) { 
+  
 
-  text-align: center;
-}
+.points { flex-direction: column; }
 
-
-.section3col2 {
-
-  margin-top: 70px;
-}
-
-.section3getstartedbigtext {
+.section3getstarted { margin-top: 120px; flex-direction: column; }
 
 
-margin-left: 100px;
-
-}
-
-#col2 {
-
-padding-left:0px;
-padding-right:0px;
-padding-top: 50px;
-padding-bottom: 50px;
-}
-
-.middlebox {
-
-height: 850px;
+.section3col1 { text-align: center; }
 
 
-}
+.section3col2 { margin-top: 70px; }
 
-.wrapper1, .wrapper2, .wrapper3 {
+.section3getstartedbigtext { margin:auto; }
+
+#col2 { padding-left:0px; padding-right:0px; padding-top: 50px; padding-bottom: 50px; }
+
+.middlebox { height: 850px; }
+
+.wrapper1, .wrapper2, .wrapper3 { flex-direction: column; text-align: center; }
+
+.wrapper2 { margin-bottom: 650px; }
+
+.ximage1 { margin-top: 80px; }
+
+.textblock1 { text-align:center; margin-right: 0px; }
+
+.textblock2 { text-align:center; margin-left: 0px; }
+
+.image2 { margin-bottom:-700px; }
+
+.textblock3 { text-align:center; margin-top:-700px; }
+
+.section3part2bigtext { margin-left: 43px; }
 
 
-    flex-direction: column;
-text-align: center;
+.section3part2smalltext { margin-left: 22px; }
+
+.section3 { height: 3500px; }
 
 }
-
-.wrapper2 {
-
-
-margin-bottom: 650px; 
-
-}
-
-.ximage1 {
-
-  margin-top: 80px;
-}
-
-.ximage2 {
-
-}
-
-
-.textblock1 {
-
-
-  text-align:center;
-  margin-right: 0px;
-
-}
-
-
-
-.textblock2 {
-
-  text-align:center;
-
-margin-left: 0px;
-margin-top: ;
-
-}
-
-.image2 {
-
-margin-bottom:-700px ;
-
-
-
-}
-
-.textblock3 {
-
- text-align:center;
- margin-top:-700px;
-
-
-
-}
-
-.section3part2bigtext {
-
-  margin-left: 43px;
-}
-
-
-.section3part2smalltext {
-
-
-margin-left: 22px;
-
-}
-
-.section3 {
-
-
-  height: 3500px;
-
-
-
-}
-
-
 
 @media  (max-width : 630px) {
 
-.middlebox {
+.middlebox { height: 850px; margin-left:0px; margin-right:0px; }
+
+.wrapper-login { margin-right: 7px; }
+
+.getstarted { margin-right: 20px; }
 
 
-height: 850px;
-margin-left:0px;
-margin-right:0px; 
+.titlebox { margin-left: 30px; }
 
-
-
+.logo { margin-left: 30px; }
 }
 
-.wrapper-login {
-
-margin-right: 7px;
-
-
-}
-
-.getstarted {
-
-
-margin-right: 20px;
-
-
-}
-
-
-.titlebox {
-
-margin-left: 30px;
-
-
-}
-
-.logo {
-
-margin-left: 30px;
-
-}
-
-
-}
 
 @media (max-width: 1180px ) {
 
-.wrapper {
-
-      flex-direction: column;
-        margin-left: 3%;
-   
-}
-
-.filler {
-
-height:800px;
 
 
-}
-
-.colfooter1 {
+.filler { height:800px; }
 
 
 
+.image1 { width: 480px; height: 270px; }
 
+.image2 { width: 250px; }
+
+.image3 { width:431px; margin-top: 35px; height: 280px; }
 
 }
 
-.colfooter2 {
+@media (max-width: 1230px ) {
 
-margin-top: 50px;
- 
-padding-left: 23%;
+.wrapper { width: 400px; flex-direction: column; margin-top: -30px;}
 
-
-}
-
-
-
-.image1 {
-width: 480px;
-height: 270px;
-
-}
-.image2 {
-
-width: 250px;
-
-
-}
-
-.image3 {
-
-width:431px;
-margin-top: 35px;
-height: 280px;
-}
-
-
-
-
+.colfooter1 { margin-bottom: 60px; margin-left: 40px; }
 }
 
 </style>
@@ -1162,18 +998,14 @@ height: 280px;
 
  
 
-<div class="username">Hello  <?php  session_start(); echo $_SESSION['user_name'];?> !</div>
- 
 
 
 
-<div class="yourorders-div"><a href="/php/survey/orderdisplay.php" class="yourorders">My Cards</a></div>
-
-<div class="getstarted-div"><a href="/php/add-record-form-card.php" class="getstarted">Send a card</a></div>
+<div class="login-div"><a href="/php/index-login.php?login" class="login">Login</a></div>
 
 
+<div class="getstarted-div"><a href="/php/add-record-form-card.html" class="getstarted">Get Started</a></div>
 
-<div class="login-div"><a href="/php/index-login.php?logout" class="login">Logout</a></div>
 
 
 
@@ -1310,7 +1142,7 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 
 
 
-
+<div class="section3-wrapper">
 
 <div class="section3">
 
@@ -1455,6 +1287,7 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 </div>
 
 
+</div>
 
 
 
@@ -1462,15 +1295,14 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 <div class="footer">
 
 
+<div class="wrapper-container">
+
 <div class="wrapper">
-
-
-
 
 
 <div class="colfooter1">
 
-
+<div class="colfooter1-wrapper">
 
 <div class="title3">It’s easy to get <br> started.  </div>
 
@@ -1480,6 +1312,10 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 
 
 <a href="" class="getstarted3">Get Started</a>
+
+
+
+</div>
 
 
 </div>
@@ -1501,6 +1337,9 @@ Lorem ipsum dolor sit amet, <br> conse  adipiscing elit, sed do <br> eiusmod tem
 
 
 </div>  
+
+
+
 <div class="filler">
 
 <div class="footertext">
