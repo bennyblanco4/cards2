@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
-    <g fill="none" fill-rule="evenodd">
-        <path fill="#96DA73" d="M4 4h37v37H4z" opacity=".812"/>
-        <path stroke="#502A09" stroke-width="1.5" d="M.75.75h35.5v35.5H.75z"/>
-        <text fill="#FFF" font-family="SFProDisplay-Black, SF Pro Display" font-size="20" font-weight="700">
-            <tspan x="12.099" y="25">2</tspan>
-        </text>
-    </g>
-</svg>
