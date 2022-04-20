@@ -139,7 +139,7 @@ reciever information">
 </div>
 
 <select id="typeofcard" name="typeofcard" style="margin-bottom: 42px;">
-  <option value="">Select...</option>
+  <option value="default">Select...</option>
   <option value="1">Crazy and Goofy</option>
   <option value="2">Dark or Nervous Humor</option>
   <option value="3">Campy Humor</option>
@@ -360,9 +360,9 @@ reciever information">
 
 
 
-<div class='orders'>
+<div class='orders' id="orders">
 
-<div class='order'>
+<div class='order' id="card">
 
 
 <div class='carddata'>
@@ -395,7 +395,7 @@ reciever information">
 
 
 
-<a href="index.html" class="addnew"><img class="plus" src="assets/addnew.svg"></a>
+<a class="addnew"><img class="plus" src="assets/addnew.svg" onclick="backPrev(4); addCard();"></a>
 
 </div>
 
@@ -455,19 +455,19 @@ function showTab(n) {
   x[n].style.display = "block";
 
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").style.display = "none";
+   /* document.getElementById("nextBtn").style.display = "none";  */
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
 
 
-  if (n == (x.length)) {
+/*  if (n == (x.length)) {
 
 document.getElementById("nextBtn").style.display = "none";
 
   }
   //... and run a function that will display the correct step indicator:
-  fixStepIndicator(n)
+  fixStepIndicator(n) */
 }
 
 function nextPrev(n) {
@@ -488,6 +488,27 @@ function nextPrev(n) {
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
+
+
+function backPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab - n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
 
 function validateForm() {
   // This function deals with validation of the form fields
@@ -524,6 +545,34 @@ function fixStepIndicator(n) {
 </script>
 
 
+<script>
+  
+  function addCard(){
+
+ const card = document.getElementById('card');
+
+
+
+const clone = card.cloneNode(true);
+clone.id = "card";
+
+document.getElementById("orders").appendChild(clone);
+
+
+document.getElementById('kindofgreeting').value = 'select'; 
+document.getElementById('typeofcard').value = 'default'; 
+
+
+
+
+
+
+}
+
+
+</script>
+
+
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -555,9 +604,7 @@ function catchinput(){
 
 
     document.getElementById("card-date2").innerHTML = date;
-    
-
-  }
+    }
 
 </script>
 
