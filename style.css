@@ -677,6 +677,12 @@ position: relative;
 
 }
 
+.card-panel {
+
+height: 383px;
+  width: 374px;
+
+}
 
 .dots {
 
@@ -776,6 +782,15 @@ padding-top: 25px
 
 }
 
+
+#name {
+
+font-weight:bold;
+font-size: 28px;
+margin-top: -10px;
+
+}
+
 #card-age {
 font-size: 21px;
 padding-top: 5px;
@@ -785,7 +800,7 @@ padding-top: 5px;
 #card-rel1 {
 
 font-size: 16px;
-padding-top: 25px;
+
 
 }
 
@@ -800,7 +815,7 @@ font-weight:bold;
 #card-date1 {
 
 font-size: 16px;
-padding-top: 35px;
+
 padding-bottom: 10px;
 }
 

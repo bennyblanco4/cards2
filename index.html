@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>DW Cards</title>
+<title>DW</title>
 <meta charset="utf-8">
   
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -21,10 +21,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="Submit card reciever information">
+    <meta name="description" content="Submit 
+reciever information">
   <meta name="keywords" content="information,name,lastname,gender">
   <meta name="author" content="DW">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   
 
 
@@ -368,10 +370,10 @@
 
 
 
-<div class='card-data' id='card-name'>John Miller</div>
+<div class='card-data' id='card-name'><p id="name">Null</p></div>
 
 <div class='card-data' id='card-rel1'>Relationship to you</div>
-<div class='card-data' id='card-rel2'>Brother</div>
+<p class='card-data' id='card-rel2'>Brother</p>
 <div class='card-data' id='card-date1'>Date you want to send out the card</div>
 <div class='card-data' id='card-date2'>1 January 2022</div>
 
@@ -420,7 +422,7 @@
   <div style="overflow:auto;">
     <div>
       <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1); catchinput();">Next</button>
     </div>
   
 
@@ -437,6 +439,8 @@
      <span class="step"></span>
   </div>
 </form>
+
+
 
 
 
@@ -515,6 +519,7 @@ function fixStepIndicator(n) {
   }
   //... and adds the "active" class on the current step:
   x[n].className += " active";
+
 }
 </script>
 
@@ -531,6 +536,30 @@ function fixStepIndicator(n) {
 
 
 
+<script>
+   
+
+function catchinput(){
+
+    let firstname = document.getElementById("firstName").value;
+
+
+    document.getElementById("name").innerHTML = firstname;
+
+      let relationship = document.getElementById("relationship").value;
+
+
+    document.getElementById("card-rel2").innerHTML = relationship;
+
+      let date = document.getElementById("date").value;
+
+
+    document.getElementById("card-date2").innerHTML = date;
+    
+
+  }
+
+</script>
 
 
 <script>
