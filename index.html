@@ -67,13 +67,6 @@ reciever information">
         
        </div>
   
-
-
-
-<!--<h2> Hello  <?php  session_start(); echo $_SESSION['user_name'];?> ! </h2>
-
- <a href="/php/index.php?logout">Logout</a> -->
-  
         
 
 
@@ -309,7 +302,7 @@ reciever information">
 <p></p>
 
 <input type="date" id="date" name="date"
-       value="2019-07-22"
+       value=""
        min="" max="">
 
 
@@ -395,7 +388,9 @@ reciever information">
 
 
 
-<a class="addnew"><img class="plus" src="assets/addnew.svg" onclick="backPrev(4); addCard();"></a>
+<a class="addnew"><img class="plus" src="assets/addnew.svg" onclick="backPrev(4); addCard(); displaybutton();"></a>
+
+
 
 </div>
 
@@ -455,19 +450,16 @@ function showTab(n) {
   x[n].style.display = "block";
 
   if (n == (x.length - 1)) {
-   /* document.getElementById("nextBtn").style.display = "none";  */
+    document.getElementById("nextBtn").style.display = "none";  
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
 
 
-/*  if (n == (x.length)) {
 
-document.getElementById("nextBtn").style.display = "none";
 
-  }
   //... and run a function that will display the correct step indicator:
-  fixStepIndicator(n) */
+  fixStepIndicator(n) 
 }
 
 function nextPrev(n) {
@@ -554,6 +546,7 @@ function fixStepIndicator(n) {
 
 
 const clone = card.cloneNode(true);
+
 clone.id = "card";
 
 document.getElementById("orders").appendChild(clone);
@@ -561,9 +554,11 @@ document.getElementById("orders").appendChild(clone);
 
 document.getElementById('kindofgreeting').value = 'select'; 
 document.getElementById('typeofcard').value = 'default'; 
-
-
-
+document.getElementById('firstName').value = ''; 
+document.getElementById('lastName').value = ''; 
+document.getElementById('relationship').value = ''; 
+document.getElementById('gender').value = 'default'; 
+document.getElementById('date').value = 'default'; 
 
 
 
@@ -607,6 +602,43 @@ function catchinput(){
     }
 
 </script>
+
+
+<script>
+
+  function displaybutton(){
+
+document.getElementById("nextBtn").style.display = "";
+
+}
+
+  </script>
+
+
+<script>
+
+
+function selections(){
+
+let selection = document.getElementById('kindofgreeting').value;
+
+if( selection == 1) {
+
+document.getElementById('r1').style.display = "none";  
+
+
+}
+
+
+
+}
+
+
+
+
+</script>
+
+<!-- jquery script --
 
 
 <script>
@@ -726,7 +758,7 @@ $(function(){
 
 </script>
 
-
+-->
 
 
 
